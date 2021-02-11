@@ -50,7 +50,7 @@
 		"dev": "run-s clean copy && run-p start watch",
 		"doc": "esdoc",
 		"lint": "eslint --ext .js --fix src demo/src",
-		"preinstall": "npm i && npm run build",
+		"prepare": "npm run build",
 		"prepublishOnly": "run-s clean test doc",
 		"test": "run-s lint build ava",
 		"start": "hs -s",
